@@ -1,0 +1,184 @@
+/*
+Gallery CSS
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.row > .column {
+    padding: 5em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+.column {
+	float: none;
+	width: 25%;
+	padding: 8px;
+}
+*/
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0 auto;
+}
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* The Close Button */
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 9;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*  Slides  */
+
+.mySlides {
+    display: none;
+    max-width: 100%;
+    margin: auto;
+    overflow: auto;
+}
+
+.mySlides img {
+    max-height: 500px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 16%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery {
+	max-height: 500px;
+}
+.gallery .prev, .gallery .next {
+/*	top: 20%*/
+}
+
+/* Position the "prev" button to the left */
+
+.prev {
+    left: 0;
+}
+
+/* Position the "next" button to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 0.1em 0.9em;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+}
+
+/*  Caption  */
+
+.caption-container {
+    text-align: center;
+    padding: 1em 1em 0;
+    color: white;
+}
+
+/*  Thumbnails  */
+
+.demo {
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.padding {
+    margin: 0.4em;
+    padding: 0.1em;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/*  Gallery Cover  */
+
+img.hover-shadow {
+    transition: 0.3s
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
