@@ -176,5 +176,5 @@ img.hover-shadow {
 header > h2,
 .blurb > p
 {
-    text-shadow: 3px
+    drop-shadow(0 0 25px black);
 }
