@@ -173,8 +173,10 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-header > h2,
-.blurb > p
+.blurb p,
+.blurb header h2
 {
-    drop-shadow(0 0 25px black);
+    text-shadow: 0 0 20px grey;
+/*    color: black;*/
+/*    font-weight: bolder;*/
 }
