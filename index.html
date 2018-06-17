@@ -48,11 +48,11 @@
 				</div>
 				<!--  Gallery Cover Image  -->
 				<div class="row 6u$ 12u$(medium) important(medium)" style="margin: auto">
-					<span class="image fit" style="padding: 0"><img src="images/gallery/Battle%20on%20Hoth%20(Chicopee)_2258x1562.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></span>
+					<span class="image fit" style="padding: 0"><img src="images/gallery/Battle%20on%20Hoth%20(Chicopee)_2258x1562.jpg" onclick="openModal();currentSlide(1);disableScrolling()" class="hover-shadow cursor"></span>
 				</div>
 				<!--  Gallery Modal  -->
 				<div id="myModal" class="modal">
-					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<span class="close cursor" onclick="closeModal();enableScrolling()">&times;</span>
 					<div class="modal-content" align="center">
 						<!--  Gallery Slides  -->
 						<div class="gallery">
@@ -539,14 +539,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<!-- Footer -->
 	<section id="footer">
 		<ul class="icons">
-			<li><a href="#" class="icon alt fab fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon alt fab fa-facebook"><span class="label">Facebook</span></a></li>
-			<li><a href="#" class="icon alt fab fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="#" class="icon alt fab fa-github"><span class="label">GitHub</span></a></li>
-			<li><a href="#" class="icon alt fas fa-envelope"><span class="label">Email</span></a></li>
+			<li><a href="https://twitter.com/ThatChocoBro" class="icon alt fab fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+			<li><a href="https://www.facebook.com/ThatChocolateGuy" class="icon alt fab fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+			<li><a href="https://www.instagram.com/thatchocolateguy/" class="icon alt fab fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+			<li><a href="https://github.com/ThatChocolateGuy" class="icon alt fab fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+<!--			<li><a href="#" class="icon alt fas fa-envelope"><span class="label">Email</span></a></li>-->
 		</ul>
 		<ul class="copyright">
-			<li>&copy; ThatChocolateGuy 2018</li>
+			<li>ThatChocolateGuy &copy; 2018</li>
 			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 		</ul>
 	</section>

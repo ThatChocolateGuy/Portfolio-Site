@@ -38,3 +38,16 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+// Enable/Disable Scrolling Outside of Modal
+function disableScrolling() {
+    var x = window.scrollX;
+    var y = window.scrollY;
+    window.onscroll = function () {
+        window.scrollTo(x, y);
+    };
+}
+
+function enableScrolling() {
+    window.onscroll = function () {};
+}
