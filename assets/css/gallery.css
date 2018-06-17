@@ -16,14 +16,6 @@ Gallery CSS
     clear: both;
 }
 
-/*
-.column {
-	float: none;
-	width: 25%;
-	padding: 8px;
-}
-*/
-
 /* The Modal (background) */
 
 .modal {
@@ -95,15 +87,15 @@ Gallery CSS
 .next {
     cursor: pointer;
     position: absolute;
-    top: 16%;
+    top: 0; /* margin-top handled dynamically in gallery.js */
     width: auto;
     padding: 16px;
-    margin-top: -50px;
     color: white;
     font-weight: bold;
     font-size: 20px;
     transition: 0.3s ease;
     border-radius: 0 3px 3px 0;
+    border: none;
     user-select: none;
     -webkit-user-select: none;
     background-color: rgba(0, 0, 0, 0.3);
@@ -111,9 +103,6 @@ Gallery CSS
 
 .gallery {
 	max-height: 500px;
-}
-.gallery .prev, .gallery .next {
-/*	top: 20%*/
 }
 
 /* Position the "prev" button to the left */
@@ -165,6 +154,7 @@ Gallery CSS
 .padding {
     margin: 0.4em;
     padding: 0.1em;
+    vertical-align: middle;
 }
 
 .active,

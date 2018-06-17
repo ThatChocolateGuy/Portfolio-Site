@@ -39,6 +39,18 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
+// Repositions next/prev arrows to maintain center v-alignment
+function repositionArrows() {
+    var gallery = document.getElementById('gallery')
+    var prev = document.getElementById('prev');
+    var next = document.getElementById('next');
+    var h = gallery.offsetHeight;
+    console.log(h);
+    console.log(h/2);
+    prev.style.marginTop = (h / 2 - 26) + "px";
+    next.style.marginTop = (h / 2 - 26) + "px";
+}
+
 // Enable/Disable Scrolling Outside of Modal
 function disableScrolling() {
     var x = window.scrollX,

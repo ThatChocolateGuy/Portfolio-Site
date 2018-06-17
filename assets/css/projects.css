@@ -27,7 +27,7 @@ Project Slide-Up Overlay CSS
 .text {
     background-color: whitesmoke;
     font-size: 1em;
-    padding: 1em 1em 1em 1em;
+    padding: 1em;
     color: white;
     position: absolute;
     top: 50%;

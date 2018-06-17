@@ -21,7 +21,7 @@
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 </head>
 
-<body>
+<body onresize="repositionArrows()">
 
 	<!-- Header -->
 	<section id="header">
@@ -48,17 +48,17 @@
 				</div>
 				<!--  Gallery Cover Image  -->
 				<div class="row 6u$ 12u$(medium) important(medium)" style="margin: auto">
-					<span class="image fit" style="padding: 0"><img src="images/gallery/Battle%20on%20Hoth%20(Chicopee)_2258x1562.jpg" onclick="openModal();currentSlide(1);disableScrolling()" class="hover-shadow cursor"></span>
+					<span class="image fit" style="padding: 0"><img src="images/gallery/Battle%20on%20Hoth%20(Chicopee)_2258x1562.jpg" onclick="openModal();currentSlide(1);disableScrolling();repositionArrows();" class="hover-shadow cursor"></span>
 				</div>
 				<!--  Gallery Modal  -->
 				<div id="myModal" class="modal">
 					<span class="close cursor" onclick="closeModal();enableScrolling()">&times;</span>
 					<div class="modal-content" align="center">
 						<!--  Gallery Slides  -->
-						<div class="gallery">
+						<div id="gallery" class="gallery" onclick="repositionArrows()">
 							<!--  Next and Previous Buttons  -->
-							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							<a id="prev" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a id="next" class="next" onclick="plusSlides(1)">&#10095;</a>
 							<!-- Slides Container -->
 							<div class="mySlides">
 								<div class="numbertext">1 / 8</div>
@@ -547,7 +547,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		</ul>
 		<ul class="copyright">
 			<li>ThatChocolateGuy &copy; 2018</li>
-			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
 		</ul>
 	</section>
 
